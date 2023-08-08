@@ -331,25 +331,30 @@ class _DeliverPageState extends State<DeliverPage> {
                                                             15.r),
                                                   ),
                                                   child: IconButton(
-                                                      onPressed: () {
-                                                        Navigator.of(context)
-                                                            .pushReplacement(
-                                                                MaterialPageRoute(
-                                                                    builder: (_) =>
-                                                                        const ThankuPage()));
-                                                      },
+                                                      onPressed: () {},
                                                       icon: Icon(
                                                         Icons.add,
                                                       )),
                                                 );
                                               },
-                                              child: Text(
-                                                "Place Order",
-                                                style: TextStyle(
-                                                    fontSize: 16.sp,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontStyle: FontStyle.italic,
-                                                    color: Colors.white),
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  Navigator.of(context)
+                                                      .pushReplacement(
+                                                          MaterialPageRoute(
+                                                              builder: (_) =>
+                                                                  const ThankuPage()));
+                                                },
+                                                child: Text(
+                                                  "Place Order",
+                                                  style: TextStyle(
+                                                      fontSize: 16.sp,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                      color: Colors.white),
+                                                ),
                                               ),
                                             ),
                                           ],

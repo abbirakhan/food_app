@@ -158,7 +158,7 @@ class _ThankuPageState extends State<ThankuPage> {
             ),
             Positioned(
               left: 90.w,
-              top: 420.h,
+              top: 850.h,
               child: SizedBox(
                   height: 40.h,
                   width: 250.w,
@@ -172,10 +172,8 @@ class _ThankuPageState extends State<ThankuPage> {
                                 BorderRadius.all(Radius.circular(12.r)),
                           )),
                       onPressed: () {
-                        Navigator.of(context).pushReplacement(
-                                              MaterialPageRoute(
-                                                  builder: (_) =>
-                                                      const HomePage()));
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (_) => const HomePage()));
                       },
                       child: Text(
                         "Go to Home page",
