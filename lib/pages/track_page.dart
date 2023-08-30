@@ -33,7 +33,6 @@ class TrackPage extends StatelessWidget {
             width: 130.w,
           ),
         ),
-      
         Positioned(
             top: 270.h,
             child: Container(
@@ -195,7 +194,7 @@ class TrackPage extends StatelessWidget {
                               onPressed: () {
                                 Navigator.of(context).pushReplacement(
                                     MaterialPageRoute(
-                                        builder: (_) => const TrackPage()));
+                                        builder: (_) => const HomePage()));
                               },
                               child: Text(
                                 "Go to Home page",

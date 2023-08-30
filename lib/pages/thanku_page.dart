@@ -143,12 +143,19 @@ class _ThankuPageState extends State<ThankuPage> {
                                         )),
                                   );
                                 },
-                                child: const Text(
-                                  "Track my Order",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).pushReplacement(
+                                        MaterialPageRoute(
+                                            builder: (_) => const TrackPage()));
+                                  },
+                                  child: const Text(
+                                    "Track my Order",
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
+                                  ),
                                 ))),
                       ],
                     ),
